@@ -7,16 +7,13 @@ import org.example.metier.MetierImp;
 
 public class PresentationV1 {
     public static void main(String[] args) {
+        /* injection des dependances par instanciation statique > new */
+        DAOimpl d = new DAOimpl();
+       /* Metierimpl metier = new Metierimpl();
+         metier.setDao(d); // injection via setter */
 
-        //Injection des dépendances par instanciation statique
-        Dao dao=new DAOimpl();
-        MetierImp metier=new MetierImp();
-        metier.setDao(dao);
-        System.out.println("'Injection via setter :'   Resultat : "+metier.calcul());
-
-        IMetier metierr= new IMetier(dao);//Injection via le constructeur
-        System.out.println(" 'Injection via le constructeur : '    Resultat : "+metier.calcul());
-
+        MetierImp metier = new MetierImp(d); // injection via constructeur
+        System.out.println("RES ="+metier.calcul());
 
     }
 }

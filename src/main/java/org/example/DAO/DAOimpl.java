@@ -1,5 +1,9 @@
 package org.example.DAO;
 
+
+import org.springframework.stereotype.Component;
+
+@Component("d")
 public class DAOimpl implements Dao{
     @Override
         public double getData() {

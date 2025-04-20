@@ -1,12 +1,15 @@
 package org.example.metier;
 
 import org.example.DAO.Dao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-public class MetierImp {
+@Component("metier")
+public class MetierImp implements IMetier {
+    @Autowired
     private Dao dao;
-    public MetierImp() {
 
-    }
+    public MetierImp() {}
     public MetierImp(Dao dao) {
         this.dao=dao;
     }
