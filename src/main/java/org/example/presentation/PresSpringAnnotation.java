@@ -12,6 +12,5 @@ public class PresSpringAnnotation {
         System.out.println("RES"+ metier.calcul());
 
 
-
     }
 }
