@@ -40,7 +40,7 @@
 
     <build>
         <plugins>
-            <!-- Plugin Maven pour compiler le projet -->
+            <!--- Plugin Maven pour compiler le projet -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

@@ -3,9 +3,7 @@ package org.example.presentation;
 import org.example.metier.IMetier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.lang.annotation.Annotation;
 
 public class PresSpringAnnotation {
     public static void main(String[] args) {
